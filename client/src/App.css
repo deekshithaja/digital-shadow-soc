@@ -1,0 +1,45 @@
+/* Inter Font via Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --font-family-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+  /* Color Palette - Professional Cyber Dark */
+  --bg-page: #0b0f19;
+  --bg-panel: #141b2d;
+  --bg-input: #1f293a;
+  --bg-accent: #0284c7; /* Brand Blue */
+
+  --border-subtle: #2d3748;
+  --border-focus: #38bdf8;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  /* Status Colors */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+select,
+button {
+  font-family: inherit;
+  font-size: 14px;
+}

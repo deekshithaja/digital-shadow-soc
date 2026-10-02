@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Surface & Base */
+  --bg-core: #050811;
+  --bg-surface: #0a0f1d;
+  --bg-card: #0f172a;
+  --bg-card-hover: #131d35;
+  --bg-input: #070b14;
+
+  /* Borders & Grids */
+  --border-subtle: #1e293b;
+  --border-focus: #0284c7;
+  --border-glow: rgba(56, 189, 248, 0.25);
+
+  /* Cyber Accents */
+  --cyber-blue: #0ea5e9;
+  --cyber-cyan: #06b6d4;
+  --cyber-emerald: #10b981;
+  --cyber-amber: #f59e0b;
+  --cyber-rose: #f43f5e;
+  --cyber-purple: #8b5cf6;
+
+  /* Text System */
+  --text-pure: #ffffff;
+  --text-main: #e2e8f0;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-core);
+  color: var(--text-main);
+  background-image:
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(14, 165, 233, 0.05) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 85% 85%,
+      rgba(139, 92, 246, 0.04) 0%,
+      transparent 40%
+    );
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
+
+/* Custom Scrollbar for Analyst View */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-core);
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
